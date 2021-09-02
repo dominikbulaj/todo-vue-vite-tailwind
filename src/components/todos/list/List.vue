@@ -20,6 +20,7 @@ export default defineComponent({
   props: {
     todos: {
       type: Array as PropType<Todo[]>, // https://v3.vuejs.org/guide/typescript-support.html#annotating-props
+      required: true,
     },
     toggleTodo: {
       type: Function,
