@@ -1,7 +1,11 @@
-# `Todo list` build using Vue 3 + Typescript + Vite + Tailwind CSS
+# **Todo list** app build using Vue 3 + Typescript + Vite + Tailwind CSS
 
 Used [template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-vue-ts) to quickly start developing with Vue 3 and Typescript in Vite.
 Also added [Tailwind CSS](https://tailwindcss.com/docs/guides/vue-3-vite) for making UI nice and clean.
+
+## Demo
+
+[https://todo-vue-vite-tailwind.netlify.app/](https://todo-vue-vite-tailwind.netlify.app/)
 
 # Project purposes
 
