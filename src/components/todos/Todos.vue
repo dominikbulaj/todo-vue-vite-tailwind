@@ -26,10 +26,12 @@ export default defineComponent({
     Filters,
   },
   data() {
+    const todos = getTodoList();
+    const nextId = todos.map((todo) => todo.id).reduce((max, id) => Math.max(max, id), -1) + 1;
     return {
-      nextId: 3,
+      nextId,
       showDone: false,
-      todos: getTodoList(),
+      todos,
     };
   },
   computed: {
