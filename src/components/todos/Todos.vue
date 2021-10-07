@@ -46,8 +46,8 @@ export default defineComponent({
     },
   },
   watch: {
-    todos(newList) {
-      saveTodoList(newList);
+    todos(value) {
+      saveTodoList(value);
     },
   },
   methods: {
@@ -58,7 +58,7 @@ export default defineComponent({
         done: false,
       };
       this.nextId++;
-      this.todos.push(newTodo);
+      this.todos = [...this.todos, newTodo];
     },
     toggleTodo(id: number) {
       this.todos = this.todos.map((t) => (t.id === id ? { ...t, done: !t.done } : t));
