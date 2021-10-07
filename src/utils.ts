@@ -5,9 +5,9 @@ export interface Todo {
 }
 
 const defaultList: Todo[] = [
-    { id: 0, text: "Vegetables", done: false },
-    { id: 1, text: "Cheese", done: true },
-    { id: 2, text: "Milk", done: false },
+    { id: 1, text: "Vegetables", done: false },
+    { id: 2, text: "Cheese", done: true },
+    { id: 3, text: "Milk", done: false },
 ];
 
 const STORAGE_KEY: string = '_todos'

@@ -27,7 +27,7 @@ export default defineComponent({
   },
   data() {
     const todos = getTodoList();
-    const nextId = todos.map((todo) => todo.id).reduce((max, id) => Math.max(max, id), -1) + 1;
+    const nextId = todos.map((todo) => todo.id).reduce((max, id) => Math.max(max, id), 0) + 1;
     return {
       nextId,
       showDone: false,
